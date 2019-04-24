@@ -53,7 +53,6 @@ class FormMakerProvider extends ServiceProvider
             return "<?php echo InputMaker::create($expression); ?>";
         });
     }
-    }
 
     /**
      * Register the service provider.
@@ -92,6 +91,5 @@ class FormMakerProvider extends ServiceProvider
         // Thrid party
         $loader->alias('Form', \Collective\Html\FormFacade::class);
         $loader->alias('HTML', \Collective\Html\HtmlFacade::class);
-
-
+      }
 }
